@@ -4,125 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Raleway:ital,wght@0,200;0,400;1,500&family=Roboto+Condensed:ital@1&display=swap"
         rel="stylesheet">
-
 </head>
 
-<body>
+<body class="container-fluid">
     <header>
-        <div>
+        <div id="title">
             <div id="tright">
-                <a href="index.html"><img src="./img/logo2.png" alt="logotipo" width="130" height="80"></a>
-                <input type="search" placeholder="buscar" alt="busqueda">
+                <a href="../index.html"><img src="../img/logo2.png" alt="logotipo" width="110" height="65"></a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class=" boton btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
             <div id="tleft">
                 <a href="#">
-                    <img src="./img/social_facebook_fb_35.png" alt="facebook logo" width="85%"></a>
+                    <img src="../img/social_facebook_fb_35.png" alt="facebook logo" width="85%"></a>
                 <a href="#">
-                    <img src="./img/social_instagram_3.png" alt="instagram logo" width="85%"></a>
+                    <img src="../img/social_instagram_3.png" alt="instagram logo" width="85%"></a>
                 <a href="#">
-                    <img src="./img/social_Pinterest_8.png" alt="pinterest logo" width="85%"></a>
+                    <img src="../img/social_Pinterest_8.png" alt="pinterest logo" width="85%"></a>
                 <a href="#">
-                    <img src="./img/social_Twitter_78.png" alt="twitter logo" width="85%"></a>
-                <a href="#"><button class="boton"> Carrito</button></a>
+                    <img src="../img/social_Twitter_78.png" alt="twitter logo" width="85%"></a>
+                <a href="#"><button class="boton btn btn-outline-success">Carrito</button></a>
             </div>
         </div>
-        svg
-        <nav class="barra">
-            <ul id="navBarTop">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/about.html">Quienes somos</a></li>
-                <li><a href="./pages/shop.html">Tienda</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar barra navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/about.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./shop.html" data-bs-toggle="dropdown"
+                                aria-expanded="false">Tienda</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Audilibros</a></li>
+                                <li><a class="dropdown-item" href="#">Ebook</a></li>
+                                <li><a class="dropdown-item" href="#">Libros físicos</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
-
     <hr>
-
-    <main>
-        <section id="presentacion">
-            <div id="titulo">
-                <h1>Draven's store</h1>
+    <main class="container">
+        <section id="presentacion" class="row">
+            <div id="titulo" class="col-lg-12">
+                <h1>Draven's Bookstore</h1>
                 <h4>Las mejores colecciones, las mejores historias</h4>
-                <img src="./img/logo1.png" alt="" width="100%">
+                <img src="./img/logo1.png" alt="" width="90%">
             </div>
-            <div id="custOption">
-                <span>
-                    <img src="./img/audio.jfif" alt="" width="178px" height="178px">
+            <div id="custOption" class="row">
+                <span class="col-md-3">
+                    <img src="./img/audio.jfif" alt="" width="170px" height="170px">
                     <p><strong>Audiolibros</strong></p>
                 </span>
-                <span>
-                    <img src="./img/img6.jfif" alt="" width="178px" height="178px">
-                    <p><strong>Libros físicossssss</strong></p>
+                <span class="col-md-3">
+                    <img src="./img/img6.jfif" alt="" width="170px" height="170px">
+                    <p><strong>Libros físicos</strong></p>
                 </span>
-                <span>
-                    <img src="./img/img5.jfif" alt="" width="178px" height="178px">
+                <span class="col-md-3">
+                    <img src="./img/img5.jfif" alt="" width="170px" height="170px">
                     <p><strong>Ebook</strong></p>
                 </span>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, neque.</p>
-            <a href="./pages/shop.html">
-                <button class="boton">Ver más</button></a>
-        </section>
-        <hr>
-        <section class="seccion">
-            <h2>Productos destacados</h2>
-            <div>
-                <article class="articulo">
-                    <img src="./img/img2.jpg" alt="Cronicas del asesino de reyes 1" width="260px" height="430px">
-                    <a href="./pages/producto.html">El Nombre del viento</a>
-                    <p>$ 100</p>
-                </article>
-                <article class="articulo">
-                    <img src="./img/img3.jpg" alt="Shibumi" width="260px" height="430px">
-                    <a href="./pages/producto.html">Shibumi</a>
-                    <p>$ 110</p>
-                </article>
-                <article class="articulo">
-                    <img src="./img/img8.jpg" alt="La flor de jade" width="260px" height="430px">
-                    <a href="./pages/producto.html">El Enviado</a>
-                    <p>$ 310</p>
-                </article>
+
+            <div class="row">
+                <span class="col-sm-12">
+                    <p>Disfruta del libro que prefieras en cualquier presentación</p>
+                    <a href="./pages/shop.html">
+                        <button class="boton btn btn-outline-success">Ver más</button></a>
+                </span>
             </div>
         </section>
-        <hr>
-        <section class="side">
-            <article class="acerca">
+        <section class="row seccion">
+            <h2 class="col-sm-12">Productos destacados</h2>
+
+            <div class="col-md-3">
+                <article class="col">
+                    <div class="card shadow-sm">
+                        <img src="./img/img2.jpg" alt=" El Nombre del Viento" height="405.04">
+                        <h5><strong> Cronicas del asesino de reyes </strong></h5>
+                        <h6>El Nombre del Viento</h6>
+                        <p class="card-text">El nombre del viento es el primero de tres libros que narran las aventuras
+                            de Kvothe.</p>
+                        <div>
+                            <button type="button" class="boton">$100</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            </div>
+            <div class="col-md-3">
+                <article class="col">
+                    <div class="card shadow-sm">
+                        <img src="./img/img3.jpg" alt=" " height="405.04">
+                        <h5><strong>Shibumi</strong></h5>
+                        <h6>Volumen I</h6>
+                        <p class="card-text">Una novela de espías perfecta alrededor de la vida de un complejo asesino.
+                            Historia de espias.
+                        </p>
+                        <div>
+                            <button type="button" class="boton">$130</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            </div>
+            <div class="col-md-3">
+                <article class="col">
+                    <div class="card shadow-sm">
+                        <img src="./img/img8.jpg" alt=" " height="405.04">
+                        <h5><strong>La Flor de Jade</strong></h5>
+                        <h6>El Enviado</h6>
+                        <p class="card-text">Decían que nadie podría cambiar ya el curso de la Historia... pero la
+                            historia cambió... .</p>
+                        <div>
+                            <button type="button" class="boton">$230</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            </div>
+
+        </section>
+        <section class="row side">
+            <article class=" col-lg-6">
                 <h3>About</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt itaque eaque magni porro unde odit
                     possimus dicta impedit ab. Doloribus nulla repudiandae, id optio inventore expedita magnam nobis
                     officia! Modi.</p>
             </article>
-            <article>
-                <iframe width="505" height="260" src="https://www.youtube.com/embed/6jVHREdafT8"
+            <article class="col-lg-6">
+                <iframe width="455" height="210" src="https://www.youtube.com/embed/6jVHREdafT8"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </article>
         </section>
-        <hr>
-        <aside class="novedades">
-            <article class="acerca">
+        <aside class="row acerca">
+            <article class="col-sm-6">
                 <h2>Newsletter</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dolor officia cupiditate provident
                     veritatis assumenda hic cum saepe voluptate ab.</p>
             </article>
-            <div>
-                <input placeholder="Email" type="email" alt="correo electrónico"> <a
-                    href="#"><button>Suscribirme</button></a>
+            <div class="col-sm-6">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="email" placeholder="Correo electrónico">
+                    <a href="#"><button class=" boton btn btn-outline-success" type="submit">Suscribirme</button>
+                </form>
+
             </div>
         </aside>
-        <hr>
-    </main> 
-
+    </main>
     <footer>
         <article class="piePagina">
             <iframe
@@ -155,8 +213,10 @@
                     <img src="./img/social_Twitter_78.png" alt="twitter logo"></a>
             </nav>
         </div>
-
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
