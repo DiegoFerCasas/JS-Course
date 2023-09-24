@@ -19,8 +19,11 @@
     <header>
         <div id="title">
             <div id="tright">
-                <a href="../index.html"><img src="../img/logo2.png" alt="logotipo" width="130" height="80"></a>
-                <input type="search" placeholder="buscar" alt="busqueda">
+                <a href="../index.html"><img src="../img/logo2.png" alt="logotipo" width="110" height="65"></a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class=" boton btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
             <div id="tleft">
                 <a href="#">
@@ -31,7 +34,7 @@
                     <img src="../img/social_Pinterest_8.png" alt="pinterest logo" width="85%"></a>
                 <a href="#">
                     <img src="../img/social_Twitter_78.png" alt="twitter logo" width="85%"></a>
-                <a href="#"><button class="boton">Carrito</button></a>
+                <a href="#"><button class="boton btn btn-outline-success">Carrito</button></a>
             </div>
         </div>
         <nav class="navbar barra navbar-expand-lg navbar-dark bg-dark">
@@ -54,12 +57,12 @@
                             <a class="nav-link dropdown-toggle" href="./shop.html" data-bs-toggle="dropdown"
                                 aria-expanded="false">Tienda</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Audilibros</a></li>
-                                <li><a class="dropdown-item" href="#">Ebook</a></li>
-                                <li><a class="dropdown-item" href="#">Libros físicos</a></li>
+                                <li><a class="dropdown-item" href="./shop.html">Audilibros</a></li>
+                                <li><a class="dropdown-item" href="./shop.html">Ebook</a></li>
+                                <li><a class="dropdown-item" href="./shop.html">Libros físicos</a></li>
                             </ul>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                         </li>
                     </ul>
@@ -67,6 +70,7 @@
             </div>
         </nav>
     </header>
+
     <main>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
         <div class="container contacto">

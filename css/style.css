@@ -30,12 +30,15 @@ header #title {
     justify-content: space-between;
     align-items: center;
 }
+
 #tright {
     display: flex;
-    }
-    .d-flex{
-        align-items: center;
-    }
+}
+
+.d-flex {
+    align-items: center;
+}
+
 #tleft {
     width: 225px;
     display: flex;
@@ -164,8 +167,44 @@ h4 {
     padding: 50px 0 0 0;
 }
 
+#aboutUs {
+    height: 80vh;
+    padding: 20px 0 0 20px;
+    background-image: url(../img/bg3.jpg);
+    background-size: cover;
+    
+}
+
+#aboutUs div {
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+#aboutUs div img {
+    padding: 25px;
+    border-style: solid;
+    border-color: yellowgreen;
+    border-width: 10px;
+
+}
+
+#aboutUs article {
+    padding: 25px;
+    margin: 10px;
+    color: #FFFFFF;
+   font-size: 19px;
+   
+}
+
+#aboutUs article h2 {
+    color: #FFFFFF;
+    /*-webkit-text-stroke: 0.75px brown;*/
+
+}
+
+
 .col {
-    margin:23px 0;
+    margin: 23px 0;
     font-family: 'Playfair Display', serif;
 
 }
@@ -207,8 +246,8 @@ h4 {
 }
 
 .side {
-  padding: 15px;
-  
+    padding: 15px;
+
 }
 
 .novedades {
@@ -274,7 +313,8 @@ section h2 {
 p {
     font-family: 'Raleway', sans-serif;
 }
-.acerca{
+
+.acerca {
     align-items: center;
     border-width: 1px;
     border-top-style: solid;
