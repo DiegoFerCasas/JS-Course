@@ -15,12 +15,12 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="container-fluid">
     <header>
         <div id="title">
             <div id="tright">
                 <a href="../index.html"><img src="../img/logo2.png" alt="logotipo" width="110" height="65"></a>
-                <form class="d-flex" role="search">
+                <form class="formFlex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class=" boton btn btn-outline-success" type="submit">Buscar</button>
                 </form>
@@ -71,15 +71,29 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Productos</h2>
-        <img src="../img/millen1.jpg" alt="Millenium_1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae id nostrum quos soluta, non dolorum
-            tempora nesciunt atque, ipsam et nam consequuntur doloribus assumenda modi magni praesentium autem? Voluptas
-            expedita eum itaque beatae, quisquam voluptatibus. Aliquam non modi ipsum! Laborum autem inventore, optio
-            magni distinctio laudantium quisquam error deleniti animi?</p>
-        <hr>
+    <main class="container">
+        <div id="producto" class="row">
+            <div id="imgProduc" class="col-md-6 prueba">
+                <img src="../img/millen1.jpg" alt="Millenium_1">
+            </div>
+            <div id="descriProd" class="col-md-6">
+                <h2>Los hombres que no amaban a las mujeres. <br> (Serie Millennium I)</h2>
+                <span><strong>$70</strong></span>
+                <p>Harriet Vanger desapareció hace treinta y seis años en una isla sueca propiedad de su poderosa
+                    familia. A pesar del despliegue policial, no se encontró ni rastro de la muchacha. ¿Se escapó? ¿Fue
+                    secuestrada? ¿Asesinada? El caso está cerrado y los detalles olvidados. Pero su tío Henrik Vanger,
+                    un empresario retirado, vive obsesionado con resolver el misterio antes de morir. </p>
+                <div id="prodForm">
+                    <input class="form-control" id="cantidad" type="num" value="1" />
+                    <button class="boton btn btn-outline-success" type="button">
+                        <i></i>
+                        Agregar al carro
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer>
         <article class="piePagina">
 
