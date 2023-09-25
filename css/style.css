@@ -470,7 +470,7 @@ footer div nav {
 .gradient-brand-color {
     background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
     color: #fff;
-    background-image: url(/img/img1.jfif)
+    background-image: url(../img/img1.jfif)
 }
 
 .contact-info__wrapper {
