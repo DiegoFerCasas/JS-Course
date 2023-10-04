@@ -151,7 +151,7 @@ h4 {
 
 .boton {
     margin: 10px;
-    padding: 4px 12px;
+    padding: 8px 16px;
     background-color: black;
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
@@ -593,3 +593,24 @@ main {
 .scrollarea {
     overflow-y: auto;
 }
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+    width: 100%;
+      
+  }
+  .carousel h1{
+    font-size: 33px;
+    font-family: 
+  }
+  
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+ .carousel-item {
+    height: 23rem;
+  }
