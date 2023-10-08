@@ -42,7 +42,7 @@ header #title {
 }
 
 #tleft {
-    width: 225px;
+    width: 262px;
     display: flex;
     align-items: center;
 }
@@ -86,6 +86,10 @@ header #title {
     padding: 25px 25px 10px;
 }
 
+#custOption img {
+    border-radius: 50%;
+}
+
 span {
 
     font-family: 'Playfair Display', serif;
@@ -119,20 +123,22 @@ h1 {
     font-style: italic;
     font-size: 48px;
     color: brown;
-
+    text-shadow: 2px 2px 8px #1f1e1e;
     margin-bottom: 0px;
 }
 
 h2 {
     color: brown;
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
+    font-size: 35px;
+    font-style: italic;
 }
 
 h3 {
     font-family: 'Playfair Display', serif;
     color: brown;
     font-size: 28px;
+    font-style: italic;
 }
 
 h4 {
@@ -160,6 +166,10 @@ h4 {
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
+#tleft .boton {
+    padding: 3px 16px 8px 7px;
+}
+
 .seccion {
     justify-content: space-evenly;
     border-bottom: solid;
@@ -169,30 +179,38 @@ h4 {
     padding: 50px 0 0 0;
 }
 
+.card {
+    align-items: center;
+}
+
+.card img {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+}
+
 #aboutUs {
-    height: 80vh;
-    padding: 20px 0 0 20px;
     background-image: url(../img/bg3.jpg);
     background-size: cover;
-
 }
 
 #aboutUs div {
-    justify-content: space-around;
-    padding-top: 15px;
+    padding: 15px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 #aboutUs div img {
-    padding: 25px;
+    padding: 20px;
     border-style: solid;
-    border-color: yellowgreen;
+    border-color: #FFD93D;
     border-width: 10px;
 
 }
 
 #aboutUs article {
     padding: 25px;
-    margin: 10px;
     color: #FFFFFF;
     font-size: 19px;
 
@@ -200,7 +218,12 @@ h4 {
 
 #aboutUs article h2 {
     color: #FFFFFF;
-  
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.lead {
+    font-size: 1.25rem;
 }
 
 
@@ -283,6 +306,17 @@ h4 {
     height: 100px;
 }
 
+#promo h1 {
+    color: black;
+    text-align: left;
+}
+
+#large-th h2 {
+    color: #000000;
+    text-shadow: 2px 2px 8px #1f1e1e;
+}
+
+
 .navSide a {
     color: black;
     padding: 5px;
@@ -322,6 +356,10 @@ p {
     border-bottom-style: solid;
     border-color: #D6D6D6;
     padding-top: 15px;
+}
+
+.acerca h2 {
+    font-size: 28px;
 }
 
 .field {
@@ -372,15 +410,13 @@ footer div nav {
 }
 
 #producto {
-    padding: 15px;
-
+    padding: 30px;
     align-items: center;
 }
 
 #imgProduc {
     display: grid;
     place-items: center;
-
 }
 
 #descriProd>h2 {
@@ -391,7 +427,6 @@ footer div nav {
 #descriProd>p {
     padding: 20px 0 0;
     text-align: justify;
-
 }
 
 #descriProd>span {
@@ -420,20 +455,24 @@ footer div nav {
         display: none;
     }
 
-    #titulo img{
+    #titulo #myCarousel {
         display: none;
     }
-    .side{
+
+    .side {
         display: none;
     }
-    #destacados{
+
+    #destacados {
         display: none;
 
     }
-    #sideBar{
+
+    #sideBar {
         padding-left: 80px;
     }
-    #promo{
+
+    #promo {
         display: none;
     }
 }
@@ -537,7 +576,6 @@ html {
 main {
     height: 100vh;
     height: -webkit-fill-available;
-    /*max-height: 100vh;*/
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -593,24 +631,294 @@ main {
 .scrollarea {
     overflow-y: auto;
 }
+
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
     width: 100%;
-      
-  }
-  .carousel h1{
-    font-size: 33px;
-    font-family: 
-  }
-  
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
+
+}
+
+.carousel h1 {
+    font-size: 35px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.carousel p {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
     bottom: 3rem;
     z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
- .carousel-item {
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
     height: 23rem;
-  }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 910px;
+}
+
+.choose {
+    width: 100%;
+    height: 40px;
+}
+
+.fa {
+    margin-right: 20px;
+    font-size: 30px;
+    color: gray;
+    float: right;
+}
+
+
+/******************************************
+  Book stuff
+  *******************************************/
+
+.book {
+    display: inline-block;
+    width: 230px;
+    height: 390px;
+    box-shadow: 0 0 20px #aaa;
+    margin: 25px;
+    padding: 10px 10px 0 10px;
+    vertical-align: top;
+    transition: height 1s;
+}
+
+.cover {
+    border: 2px solid gray;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cover img {
+    width: 100%;
+
+}
+
+.textMedio {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textCover {
+    background-color: #198754;
+    color: white;
+    font-size: 14px;
+    padding: 12px 28px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.imgBook {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.cover:hover .imgBook {
+    opacity: 0.3;
+}
+
+.cover:hover .textMedio {
+    opacity: 1;
+}
+
+.book p {
+    margin-top: 12px;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.book .author {
+    font-size: 15px;
+    font-family: 'Garabito', sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 941px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .book {
+        margin: 49px;
+    }
+}
+
+@media (max-width: 730px) {
+    .book {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .cover {}
+}
+
+/*********************************
+  other
+  **********************************/
+
+h1 {
+    color: gray;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -3px;
+}
+
+/**********************************
+  display change
+  ***********************************/
+/*book height smaller, cover opacity, move text onto cover and star too
+  animate it */
+#list-th:target .book {
+    height: 100px;
+    width: 250px;
+    padding: 10px;
+    margin: 25px auto 25px auto;
+}
+
+#list-th:target .cover {
+    width: 246px;
+}
+
+#list-th:target img {
+    opacity: .1;
+}
+
+#list-th:target p {
+    margin-top: -62px;
+    margin-left: 20px;
+}
+
+/* remove button? */
+#large-th:target .book {
+    height: 390px;
+}
+
+/*end of book stuff*/
+
+*---- Main Style ----*/ #cards_landscape_wrap-2 {
+    text-align: center;
+    background: #F7F7F7;
+}
+
+#cards_landscape_wrap-2 .container {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+#cards_landscape_wrap-2 a {
+    text-decoration: none;
+    outline: none;
+}
+
+#cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box {
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    width: 100%;
+    height: 200px;
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+    opacity: 0.7;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box {
+    text-align: center;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+    padding: 30px 18px;
+}
+
+#cards_landscape_wrap-2 .card-flyer {
+    background: #FFFFFF;
+    margin-top: 50px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 50px;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+    height: 200px;
+    overflow: hidden;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Black', sans-serif;
+    letter-spacing: 1px;
+    color: #00acc1;
+}
+
+#cards_landscape_wrap-2 .container {
+    padding-top: 0px;
+    padding-bottom: 80px;
+}
+
+.card-flyer .text-box #tresLineas h6 {
+    font-size: 16px;
+}
