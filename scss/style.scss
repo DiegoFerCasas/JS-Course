@@ -1,5 +1,7 @@
+@import "./abstract/_variables.scss";
 @import "./base/typography";
 @import "./base/_reset.scss";
+@import "./layout/header";
 @import "./layout/_footer.scss";
 @import "./pages/_contact.scss";
 
@@ -9,43 +11,6 @@ body {
     margin-top: 10px;
     padding-bottom: 20px;
     background: #eee;
-}
-
-a {
-    text-decoration-line: none;
-    color: $color_w;
-}
-
-li {
-    list-style-type: none;
-}
-
-header {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-header #title {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#tright {
-    display: flex;
-}
-
-.formFlex {
-    display: flex;
-    align-items: center;
-
-}
-
-#tleft {
-    width: 262px;
-    display: flex;
-    align-items: center;
 }
 
 .barra {
@@ -108,37 +73,6 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-h1 {
-    font-family: $font1;
-    font-style: italic;
-    font-size: 48px;
-    color: brown;
-    text-shadow: 2px 2px 8px #1f1e1e;
-    margin-bottom: 0px;
-}
-
-h2 {
-    color: brown;
-    font-family: $font1;
-    font-size: 35px;
-    font-style: italic;
-}
-
-h3 {
-    font-family: $font1;
-    color: brown;
-    font-size: 28px;
-    font-style: italic;
-}
-
-h4 {
-    font-family: $font1;
-    font-style: oblique;
-    font-size: 23px;
-    color: rgb(172, 40, 40);
-    margin: 10px 0;
 }
 
 .feature h2 {
@@ -204,13 +138,13 @@ h4 {
 
 #aboutUs article {
     padding: 25px;
-    color: #FFFFFF;
+    color: $color_w;
     font-size: 19px;
 
 }
 
 #aboutUs article h2 {
-    color: #FFFFFF;
+    color: $color_w;
     font-size: 30px;
     padding-bottom: 10px;
 }
@@ -281,19 +215,7 @@ h4 {
     padding-top: 133px;
 }
 
-.gridTienda {
-    display: grid;
-    grid-template-areas:
-        "hd   hd "
-        "sb   fb "
-        "sb   nl "
-        "sb   op "
-        "ft   ft ";
-    grid-template-columns: 282px 1fr;
-    grid-template-rows: 100px 0fr 1fr 300px;
-    height: 100vh;
-    align-items: center;
-}
+
 
 .gridTienda header {
     height: 100px;

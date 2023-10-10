@@ -1,6 +1,69 @@
+h1 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 48px;
+  color: brown;
+  text-shadow: 2px 2px 8px #1f1e1e;
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: brown;
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  font-style: italic;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  color: brown;
+  font-size: 28px;
+  font-style: italic;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-style: oblique;
+  font-size: 23px;
+  color: rgb(172, 40, 40);
+  margin: 10px 0;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration-line: none;
+  color: #ffffff;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+}
+header #title {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #title #tright {
+  display: flex;
+}
+header #title #tright .formFlex {
+  display: flex;
+  align-items: center;
+}
+header #title #tleft {
+  width: 262px;
+  display: flex;
+  align-items: center;
 }
 
 footer {
@@ -54,7 +117,7 @@ footer div .piePagina p {
   padding-top: 3px;
 }
 .contacto h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Playfair Display", serif;
 }
 .contacto ul li span {
@@ -128,42 +191,6 @@ body {
   background: #eee;
 }
 
-a {
-  text-decoration-line: none;
-  color: #ffffff;
-}
-
-li {
-  list-style-type: none;
-}
-
-header {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-header #title {
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#tright {
-  display: flex;
-}
-
-.formFlex {
-  display: flex;
-  align-items: center;
-}
-
-#tleft {
-  width: 262px;
-  display: flex;
-  align-items: center;
-}
-
 .barra {
   background-image: url(../img/Designer.png);
   margin-bottom: 20px;
@@ -217,37 +244,6 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-
-h1 {
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: 48px;
-  color: brown;
-  text-shadow: 2px 2px 8px #1f1e1e;
-  margin-bottom: 0px;
-}
-
-h2 {
-  color: brown;
-  font-family: "Playfair Display", serif;
-  font-size: 35px;
-  font-style: italic;
-}
-
-h3 {
-  font-family: "Playfair Display", serif;
-  color: brown;
-  font-size: 28px;
-  font-style: italic;
-}
-
-h4 {
-  font-family: "Playfair Display", serif;
-  font-style: oblique;
-  font-size: 23px;
-  color: rgb(172, 40, 40);
-  margin: 10px 0;
 }
 
 .feature h2 {
@@ -311,12 +307,12 @@ h4 {
 
 #aboutUs article {
   padding: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 19px;
 }
 
 #aboutUs article h2 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 30px;
   padding-bottom: 10px;
 }
@@ -379,15 +375,6 @@ h4 {
 
 .side div {
   padding-top: 133px;
-}
-
-.gridTienda {
-  display: grid;
-  grid-template-areas: "hd   hd " "sb   fb " "sb   nl " "sb   op " "ft   ft ";
-  grid-template-columns: 282px 1fr;
-  grid-template-rows: 100px 0fr 1fr 300px;
-  height: 100vh;
-  align-items: center;
 }
 
 .gridTienda header {

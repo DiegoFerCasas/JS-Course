@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    flex-flow: column wrap;
+
+    #title {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #tright {
+            display: flex;
+
+            .formFlex {
+                display: flex;
+                align-items: center;
+
+            }
+        }
+
+        #tleft {
+            width: 262px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+
+}

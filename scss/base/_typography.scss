@@ -1,5 +1,30 @@
-$font1: 'Playfair Display', serif;
-$font2: 'Roboto Condensed', sans-serif;
-$font3: 'Raleway', sans-serif;
-$font4: 'Garabito', sans-serif;
-$color_w: #ffffff
+h1 {
+    font-family: $font1;
+    font-style: italic;
+    font-size: 48px;
+    color: brown;
+    text-shadow: 2px 2px 8px #1f1e1e;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: brown;
+    font-family: $font1;
+    font-size: 35px;
+    font-style: italic;
+}
+
+h3 {
+    font-family: $font1;
+    color: brown;
+    font-size: 28px;
+    font-style: italic;
+}
+
+h4 {
+    font-family: $font1;
+    font-style: oblique;
+    font-size: 23px;
+    color: rgb(172, 40, 40);
+    margin: 10px 0;
+}

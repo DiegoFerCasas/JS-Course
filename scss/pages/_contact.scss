@@ -1,22 +1,27 @@
 .contacto {
     font-family: $font1;
     padding: 20px 0;
-    h5{
+
+    h5 {
         font-size: 16px;
         padding-top: 3px;
     }
-    h3{
-        color: #FFFFFF;
+
+    h3 {
+        color: $color_w;
         font-family: $font1;
     }
-    ul{
-        li{
-            span{
+
+    ul {
+        li {
+
+            span {
                 width: auto;
                 padding: 0%;
                 margin: 0%;
                 font-size: 16px;
-                i{
+
+                i {
                     font-size: 16px;
                     color: $color_w;
                     padding-top: 6px;
@@ -24,6 +29,7 @@
             }
         }
     }
+
     #radios {
         padding: 5px;
         color: #505356;
