@@ -1,0 +1,43 @@
+
+.carousel {
+    margin-bottom: 4rem;
+    width: 100%;
+    h1 {
+        font-size: 35px;
+        color: #FFFFFF;
+        text-shadow: 2px 2px 4px #000000;
+    
+    }
+    p {
+        color: #FFFFFF;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+.carousel-item {
+    height: 23rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 910px;
+}
+
+.choose {
+    width: 100%;
+    height: 40px;
+}
+
+@media (max-width: 728px) {
+ 
+    #titulo #myCarousel {
+        display: none;
+    }
+}

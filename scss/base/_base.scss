@@ -1,0 +1,28 @@
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    background: #eee;
+    min-height: -webkit-fill-available;
+}
+
+main {
+    height: 100vh;
+    height: -webkit-fill-available;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+span {
+
+    font-family: $font1;
+    margin: 10px;
+    font-size: 19px;
+}
+
+p {
+    font-family: $font3;
+}

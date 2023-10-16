@@ -1,0 +1,36 @@
+#producto {
+    padding: 30px;
+    align-items: center;
+}
+
+#imgProduc {
+    display: grid;
+    place-items: center;
+}
+
+#descriProd>h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+#descriProd>p {
+    padding: 20px 0 0;
+    text-align: justify;
+}
+
+#descriProd>span {
+    margin: 50px;
+    font-size: 21px;
+
+}
+
+#prodForm {
+    display: flex;
+    align-items: center;
+}
+
+#prodForm input {
+    max-width: 3rem;
+    max-height: 2rem;
+    text-align: center;
+}

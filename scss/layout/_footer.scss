@@ -2,8 +2,8 @@ footer {
     color: black;
     font-family: $font3;
     background-color: #fefae0;
-    padding: 5px 10px;
-    margin: 10px 0px;
+    padding: 10px;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -54,6 +54,35 @@ footer {
             p {
                 padding: 8px;
             }
+        }
+    }
+}
+
+#sign {
+    font-family: $font3;
+
+    p {
+        margin-bottom: -1.5rem;
+        font-size: 12px;
+        text-align: right;
+    }
+}
+
+@media (max-width: 728px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        article {
+            display: none;
+        }
+
+        div {
+
+            h3 {
+                text-align: center;
+            }
+
         }
     }
 }

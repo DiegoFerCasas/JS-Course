@@ -14,16 +14,40 @@ header {
             .formFlex {
                 display: flex;
                 align-items: center;
-
             }
+
         }
 
         #tleft {
             width: 262px;
             display: flex;
             align-items: center;
+
+            .boton {
+                padding: 3px 16px 8px 7px;
+            }
         }
     }
 
+}
 
+.navbar {
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+@media (max-width: 728px) {
+    header {
+        #title {
+            #tleft {
+                display: none
+            }
+
+            #tright {
+                .formFlex {
+                    display: none;
+                }
+            }
+        }
+    }
 }
