@@ -265,11 +265,18 @@ section h2 {
 }
 
 @media (max-width: 728px) {
+  span {
+    margin: 0px;
+  }
   #destacados {
     display: none;
   }
   .side {
     display: none;
+  }
+  #custOption img {
+    width: 60%;
+    height: 72%;
   }
 }
 .carousel {
