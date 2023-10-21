@@ -315,6 +315,10 @@ section h2 {
 .carousel-item {
   height: 23rem;
 }
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
 
 .container {
   margin: 0 auto;
