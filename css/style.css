@@ -103,6 +103,7 @@ header #title #tleft {
   width: 262px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 header #title #tleft .boton {
   padding: 3px 16px 8px 7px;
@@ -189,6 +190,13 @@ header #title #tleft .boton {
   flex-flow: column nowrap;
   align-items: center;
 }
+#titulo h2 {
+  font-family: "Playfair Display", serif;
+  font-style: oblique;
+  font-size: 23px;
+  color: rgb(172, 40, 40);
+  margin: 10px 0;
+}
 
 #custOption {
   display: flex;
@@ -252,6 +260,8 @@ section h2 {
 }
 .card img {
   padding: 10px;
+  max-width: 100%;
+  width: 100%;
 }
 .card p {
   padding: 10px;
@@ -264,18 +274,20 @@ section h2 {
   padding-top: 133px;
 }
 
+@media (max-width: 768px) {
+  #destacados {
+    display: none;
+  }
+}
 @media (max-width: 728px) {
   span {
     margin: 0px;
-  }
-  #destacados {
-    display: none;
   }
   .side {
     display: none;
   }
   #custOption img {
-    width: 60%;
+    width: 40%;
     height: 72%;
   }
 }

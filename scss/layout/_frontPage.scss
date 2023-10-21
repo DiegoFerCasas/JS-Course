@@ -7,7 +7,13 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-
+   h2{
+    font-family: $font1;
+    font-style: oblique;
+    font-size: 23px;
+    color: rgb(172, 40, 40);
+    margin: 10px 0;
+   } 
 }
 
 
@@ -81,6 +87,8 @@ section h2 {
 
     img {
         padding: 10px;
+        max-width: 100%;
+        width: 100%;
     }
 
     p {
@@ -97,14 +105,15 @@ section h2 {
 
 }
 
+@media (max-width: 768px) {
+    #destacados {
+        display: none;
+    }
+}
+
 @media (max-width: 728px) {
     span {
         margin: 0px;
-    }
-
-    #destacados {
-        display: none;
-
     }
 
     .side {
@@ -113,7 +122,7 @@ section h2 {
 
     #custOption {
         img {
-            width: 60%;
+            width: 40%;
             height: 72%;
 
         }
