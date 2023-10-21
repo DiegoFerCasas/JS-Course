@@ -580,6 +580,7 @@ section h2 {
 @media (max-width: 728px) {
   #sideBar {
     padding-left: 40px;
+    overflow-x: hidden;
   }
   #promo {
     display: none;
