@@ -1,131 +1,122 @@
-#presentacion {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
-#titulo {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-   h2{
-    font-family: $font1;
-    font-style: oblique;
-    font-size: 23px;
-    color: rgb(172, 40, 40);
-    margin: 10px 0;
-   } 
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 
-#custOption {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 25px 25px 10px;
-
-    img {
-        border-radius: 50%;
-    }
-
-    span {
-        h3 {
-            font-family: $font3;
-            font-size: 18px;
-            color: black;
-            font-weight: bold;
-        }
-    }
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
 }
+
+/*barra Buscador con JS*/
+
+
+#datalistSuggestions {
+  position: absolute;
+  color: white;
+  background-color: #708090;
+  max-height: 250px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+#searchInputBox.active #datalistSuggestions {
+  opacity: 1;
+  pointer-events: auto;
+  padding: 6px 8px;
+  li {
+    display: block;
+  }
+}
+
+#datalistSuggestions li {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: none;
+}
+form #searchButton.boton {
+  margin: 0;
+  padding: 6px 19px;
+  font-size: 16px;
+  font-family: inherit;
+  color:#198754;
+  box-shadow: none;
+  cursor: pointer;
+  
+}
+#searchButton.boton:hover{
+  color: white;
+}
+
 
 .seccion {
-    justify-content: space-evenly;
-    border-bottom: solid;
-    border-top: solid;
-    border-width: 1px;
-    border-color: #D6D6D6;
-    padding: 50px 0 0 0;
+  justify-content: space-evenly;
+  border-width: 1px;
+  border-color: #D6D6D6;
+  padding: 0 0 0;
 }
 
-section h2 {
-    text-align: center;
+#destacados {
+  margin: 5px;
+  padding: 5px;
 }
 
-.acerca {
-    align-items: center;
-    border-width: 1px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: #D6D6D6;
-    padding-top: 15px;
+#lasTarjetas {
+  padding: 15px;
 }
 
-.acerca h2 {
-    font-size: 28px;
+
+/* Featurettes
+    ------------------------- */
+.featurette {
+  margin: 5px;
+  padding: 5px;
 }
 
-.col {
-    margin: 23px 0;
-    font-family: $font1;
-
-    h5 {
-        text-align: center;
-        font-style: italic;
-    }
-
-    h6 {
-        text-align: center;
-    }
-
-    .boton {
-        margin-top: 0px;
-    }
+.featurette-divider {
+  margin: 3rem 0;
+  overflow-x: hidden;
 
 }
 
-.card {
-    align-items: center;
-
-    img {
-        padding: 10px;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    p {
-        padding: 10px;
-    }
+.featurette-heading {
+  letter-spacing: -.05rem;
 }
 
-.side {
-    padding: 15px;
 
-    div {
-        padding-top: 133px;
-    }
+@media (min-width: 40em) {
+  
 
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
 }
 
-@media (max-width: 768px) {
-    #destacados {
-        display: none;
-    }
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+
 }
 
 @media (max-width: 728px) {
-    span {
-        margin: 0px;
-    }
 
-    .side {
-        display: none;
-    }
-
-    #custOption {
-        img {
-            width: 40%;
-            height: 72%;
-
-        }
-    }
-
+  .carousel-inner {
+    display: none;
+  }
+}
+#frontNovedades{
+  padding-bottom: 6rem;
 }

@@ -1,0 +1,79 @@
+@media (min-width: 1025px) {}
+
+.disabled{
+    display: none;
+}
+
+#productoComprasPage{
+    background-image: url("https://assets-susanwiggs.sfo2.cdn.digitaloceanspaces.com/2020/05/storefront-scaled.jpg");
+    background-size: cover;
+}
+
+#seccionCompras {
+    
+#seccionCompras-carrito{
+    h1{
+        font-size: calc(1.375rem + 1.5vw);
+        font-family: 'Merriweather', serif;
+        text-shadow: none;
+    }
+}
+    .pt-5 {
+        h6 {
+            text-align: left;
+        }
+    }
+    #seccionCompras-carrito-resumen{
+        color: $color_w;
+        h3{
+            color: $color_w;
+        }
+        .boton{
+            padding: 11px 21px;
+        }
+    }
+}
+.seccionComprasRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-registration {
+    padding-bottom: 0;
+
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}
+#resumen{
+    h3,h5,hr,label{
+color: $color_w;
+text-shadow: 2px 2px 8px #1f1e1e;
+    }
+}
+.bg-grey {
+    background-image: url(../img/img1.jfif);
+}
+
+@media (min-width: 992px) {
+    .card-registration-2 .bg-grey {
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-registration-2 .bg-grey {
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+}

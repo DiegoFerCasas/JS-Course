@@ -1,6 +1,9 @@
 header {
     display: flex;
     flex-flow: column wrap;
+    #logo{
+        height: 27px;
+    }
 
     #title {
         height: 50px;
@@ -32,10 +35,6 @@ header {
 
 }
 
-.navbar {
-    margin-bottom: 20px;
-    font-size: 19px;
-}
 
 @media (max-width: 728px) {
     header {

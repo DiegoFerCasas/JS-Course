@@ -3,17 +3,24 @@ html {
 }
 
 body {
-    margin-top: 10px;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    overflow-x: hidden;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
     background: #eee;
-    min-height: -webkit-fill-available;
+    position: relative;
+    min-height: 100vh;
 }
 
 main {
-    height: 100vh;
-    height: -webkit-fill-available;
     overflow-x: auto;
     overflow-y: hidden;
+    margin-bottom: 1rem;
 }
 
 span {

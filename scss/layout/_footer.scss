@@ -1,89 +1,106 @@
-footer {
-    color: black;
-    font-family: $font3;
-    background-color: #fefae0;
-    padding: 10px;
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+// footer {
+//     color: black;
+//     font-family: $font3;
+//     background-color: #fefae0;
+//     padding: 10px;
+//     margin-top: 10px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     align-items: center;
 
-    h3 {
-        color: black;
-        font-size: 21px;
-        font-weight: bold;
-    }
+//     h3 {
+//         color: black;
+//         font-size: 21px;
+//         font-weight: bold;
+//     }
 
-    p {
-        text-align: center;
-    }
+//     p {
+//         text-align: center;
+//     }
 
-    article {
-        p {
-            color: #000000;
-        }
-    }
+//     article {
+//         p {
+//             color: #000000;
+//         }
+//     }
 
-    div {
-        nav {
-            display: flex;
-            justify-content: space-between;
-            width: 165px;
+//     div {
+//         nav {
+//             display: flex;
+//             justify-content: space-between;
+//             width: 165px;
 
-            ul {
-                li {
-                    a {
-                        color: black;
-                        justify-content: space-between;
+//             ul {
+//                 li {
+//                     a {
+//                         color: black;
+//                         justify-content: space-between;
 
-                        &:hover {
-                            color: #198754;
-                        }
-                    }
-                }
-            }
-        }
+//                         &:hover {
+//                             color: #198754;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
 
-        .piePagina {
-            a {
-                color: black;
-                justify-content: space-between;
-            }
+//         .piePagina {
+//             a {
+//                 color: black;
+//                 justify-content: space-between;
+//             }
 
-            p {
-                padding: 8px;
-            }
-        }
-    }
-}
+//             p {
+//                 padding: 8px;
+//             }
+//         }
+//     }
+// }
 
-#sign {
-    font-family: $font3;
+// #sign {
+//     font-family: $font3;
 
-    p {
-        margin-bottom: -1.5rem;
-        font-size: 12px;
-        text-align: right;
-    }
-}
+//     p {
+//         margin-bottom: -1.5rem;
+//         font-size: 12px;
+//         text-align: right;
+//     }
+// }
 
-@media (max-width: 728px) {
-    footer {
-        display: flex;
-        flex-direction: column;
+// @media (max-width: 728px) {
+//     footer {
+//         display: flex;
+//         flex-direction: column;
 
-        article {
-            display: none;
+//         article {
+//             display: none;
             
-        }
+//         }
 
-        div {
+//         div {
 
-            h3 {
-                text-align: center;
-            }
+//             h3 {
+//                 text-align: center;
+//             }
 
-        }
+//         }
+//     }
+// }
+footer{
+    background-color: #eee;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .featurette-divider{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+
+    }
+    a{
+        color:black;
+        font-weight: bold;
     }
 }

@@ -4,9 +4,10 @@
 }
 
 .book {
-    display: inline-block;
-    width: 230px;
-    height: 390px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 100%;
     box-shadow: 0 0 20px #aaa;
     margin: 25px;
     padding: 10px 10px 0 10px;
@@ -37,7 +38,7 @@
     text-align: center;
 }
 
-.textCover {
+button .textCover {
     background-color: #198754;
     color: white;
     font-size: 14px;
@@ -92,11 +93,13 @@
     }
 
 }
-#list-th{
+
+.list-th {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 #list-th:target .book {
     height: 100px;
     width: 250px;

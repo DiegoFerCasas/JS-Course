@@ -4,13 +4,11 @@ h1 {
     font-size: 48px;
     color: brown;
     text-shadow: 2px 2px 8px #1f1e1e;
-    margin-bottom: 0px;
 }
 
 h2 {
     color: brown;
     font-family: $font1;
-    font-size: 35px;
     font-style: italic;
 }
 
@@ -27,4 +25,9 @@ h4 {
     font-size: 23px;
     color: rgb(172, 40, 40);
     margin: 10px 0;
+}
+
+h6{
+    font-size: 12px;
+    text-align: center;
 }
