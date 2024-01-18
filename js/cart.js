@@ -1,18 +1,52 @@
 "use scrict";
 const librosaComprar = JSON.parse(localStorage.getItem("Libros_a_comprar"));
 onTheCart = librosaComprar
+let valoresTotal = []
 const emptyCar = document.querySelector("#seccionCompras-carritoVacio");
 const fullCar = document.querySelector("#seccionCompras-carrito");
 const carItems = document.querySelector('#seccionCompras-carrito-items');
 const resumen = document.querySelector("#seccionCompras-carrito-resumen");
 const quantity = document.querySelector('#cartQty');
-const minusButton = document.querySelectorAll('.mminus');
+
+
 const plusButton = document.querySelectorAll('.pplus');
 
+function updateTotal() {
+  librosaComprar.forEach(element => {
+    let subTotal
+    subTotal = element.precio * element.cantidad
+    valoresTotal.push(subTotal)
+  }
+  )
+ 
+  const subtotalPrice = document.querySelector('#subtotalPrice')
+  const totalPrice = document.querySelector('#totalPrice');
+  total = valoresTotal.reduce((acc, valor) => acc + valor, 0)
+  subtotalPrice.innerText = `COP$${total}`;
+
+  const ship = document.querySelector('#ship');
+  if (Number(total < 200000)) {
+    discount = 10000
+    ship.innerText = `COP$${discount}`;
+  } else {
+    discount = 0
+    ship.innerText = "Free"
+
+  }
+ 
+  const totalTotal = (total + discount)*tax
+  totalPrice.innerText = `COP $${totalTotal}`
+
+}
+
+
+
 if (librosaComprar) {
+
   emptyCar.classList.add("disabled");
   fullCar.classList.remove("disabled");
   resumen.classList.remove("disabled");
+
   updateNumber()
   quantity.innerText = `${elNumero} items`
   carItems.innerHTML = '';
@@ -26,19 +60,18 @@ if (librosaComprar) {
 
                       <div class="d-flex justify-content-between mb-4">
                         <h5 class="text-uppercase">items ${elNumero}</h5>
-                        <h5>COP$ 0.00</h5>
+                        <h5 id="subtotalPrice">COP$ 0.00</h5>
+                      </div>
+                      <div class="d-flex justify-content-between mb-4">
+                        <h5 class="text-uppercase">Taxes</h5>
+                        <h5>19%</h5>
+                      </div>
+                      <div class="d-flex justify-content-between mb-4">
+                        <h5 class="text-uppercase">Shipping</h5>
+                        <h5 id="ship"></h5>
                       </div>
 
-                      <h5 class="text-uppercase mb-3">Shipping</h5>
-
-                      <div class="mb-4 pb-2">
-                        <select class="select">
-                          <option value="1">Standard-Delivery- €5.00</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">Four</option>
-                        </select>
-                      </div>
+                     
 
                       <h5 class="text-uppercase mb-3">Give code</h5>
 
@@ -53,7 +86,7 @@ if (librosaComprar) {
 
                       <div class="d-flex justify-content-between mb-5">
                         <h5 class="text-uppercase">Total price</h5>
-                        <h5>COP$ 0.00</h5>
+                        <h5 id="totalPrice" >COP$ 0.00</h5>
                       </div>
 
                       <button type="button" class="boton btn btn-outline-success"
@@ -61,6 +94,7 @@ if (librosaComprar) {
         `;
 
   resumen.appendChild(div2);
+  updateTotal()
 
   librosaComprar.forEach((element) => {
 
@@ -104,42 +138,18 @@ if (librosaComprar) {
 
         `;
     carItems.appendChild(div);
-    minusButton.forEach(boton=>{
-      boton.addEventListener("click", (e) =>{
-      console.log(element.cantidad)
-        element.cantidad--
-        
-        
-      })
-    })
+  }
+  );
+  const minusButton = document.querySelectorAll('.mminus');
+  minusButton.forEach(boton => {
+    boton.addEventListener("click", (e) => {
 
-  });
+
+
+    })
+  })
 } else {
 
 }
-// typeSelector.forEach(boton => {
 
-//   boton.addEventListener("click", (e) => {
-
-//       typeSelector.forEach(boton => boton.classList.remove("active"));
-//       e.currentTarget.classList.add("active");
-//       if (e.currentTarget.id != "all-p") {
-//           if (e.currentTarget.id == "audio") {
-//               tituloProducto.innerText = "Audiolibros"
-//           } else if (e.currentTarget.id == "ebook") {
-//               tituloProducto.innerText = "Libros electrónicos"
-//           } else if (e.currentTarget.id == "fisico") {
-//               tituloProducto.innerText = "Libros físicos"
-//           }
-//           const botonDeProducto = articulos.filter(producto => producto.titulo.type == e.currentTarget.id);
-//           showProducts(botonDeProducto);
-//       } else {
-//           tituloProducto.innerText = "También te puede interesar";
-//           showProducts(articulos);
-
-//       }
-
-//   }
-//   )
-// });
 

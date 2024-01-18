@@ -10,6 +10,7 @@ let discountThree = 0.05;
 let discountFour = 0.1;
 let discountFull = 0.25;
 let discount;
+const tax = 1.19;
 let order;
 let total;
 let promo = "si";
@@ -17,6 +18,7 @@ let grupo = [];
 let productPage
 let elNumero
 let onTheCart
+
 
 let articulos = [
     new Collection(new Titulo("001","1", "La flor de jade","El enviado", "Jesus B Vilches", "ebook","no",'./img/img8.jpg'), 110000),
