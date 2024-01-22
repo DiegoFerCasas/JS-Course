@@ -1,10 +1,11 @@
 "use strict"
 
+
 const productContainer = document.querySelector("#product-container");
 const typeSelector = document.querySelectorAll(".type-select");
 const tituloProducto = document.querySelector("#titulo-tienda");
 let agregaCarro = document.querySelectorAll(".addCart");
-const littleNum = document.querySelector("#numeroPeque")
+
 
 function showProducts(choosenTitles) {
     productContainer.innerHTML = ""
@@ -96,13 +97,8 @@ function addToCart(e) {
 
 
     }
-    console.log(onTheCart)
-    updateNumber();
+    
     localStorage.setItem("Libros_a_comprar", JSON.stringify(onTheCart));
-}
-function updateNumber() {
-    elNumero = onTheCart.reduce((acc, titulo) => acc + titulo.cantidad, 0);
-    littleNum.innerText = elNumero;
 }
 
 

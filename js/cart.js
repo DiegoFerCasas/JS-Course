@@ -1,6 +1,6 @@
 "use scrict";
-const librosaComprar = JSON.parse(localStorage.getItem("Libros_a_comprar"));
-onTheCart = librosaComprar
+productPage = "producto.html"
+
 let valoresTotal = []
 const emptyCar = document.querySelector("#seccionCompras-carritoVacio");
 const fullCar = document.querySelector("#seccionCompras-carrito");
@@ -18,7 +18,7 @@ function updateTotal() {
     valoresTotal.push(subTotal)
   }
   )
- 
+
   const subtotalPrice = document.querySelector('#subtotalPrice')
   const totalPrice = document.querySelector('#totalPrice');
   total = valoresTotal.reduce((acc, valor) => acc + valor, 0)
@@ -33,12 +33,11 @@ function updateTotal() {
     ship.innerText = "Free"
 
   }
- 
-  const totalTotal = (total + discount)*tax
+
+  const totalTotal = (total + discount) * tax
   totalPrice.innerText = `COP $${totalTotal}`
 
 }
-
 
 
 if (librosaComprar) {
@@ -47,7 +46,7 @@ if (librosaComprar) {
   fullCar.classList.remove("disabled");
   resumen.classList.remove("disabled");
 
-  updateNumber()
+
   quantity.innerText = `${elNumero} items`
   carItems.innerHTML = '';
   resumen.innerHTML = '';

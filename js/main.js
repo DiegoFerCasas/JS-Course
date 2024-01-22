@@ -4,9 +4,8 @@ let busca
 let dimension
 let flter = [];
 let indice = [];
-const unitPrice = 80000;
 let attempt = 0;
-let discountThree = 0.05;
+let librosaComprar
 let discountFour = 0.1;
 let discountFull = 0.25;
 let discount;
@@ -46,4 +45,5 @@ Object.defineProperty(String.prototype, 'capitalize', {
     },
     enumerable: false
   });
-// hello()
+
+  

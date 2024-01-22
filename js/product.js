@@ -7,8 +7,6 @@ const cardContainer = document.querySelector('#productCardContainer');
 const choose = JSON.parse(localStorage.getItem("Libro_buscado"));
 
 
-
-
 function drawCard() {
   let index = articulos.findIndex(element => element.titulo.name == choose)
   let theOne = articulos[index]
